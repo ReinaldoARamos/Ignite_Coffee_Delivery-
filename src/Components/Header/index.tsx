@@ -16,6 +16,10 @@ export function Header() {
           Porto Alegre, RS
           
          </HeaderButton>
+
+         <HeaderButton variant="yellow">
+         <ShoppingCart size={20} weight="fill" />
+         </HeaderButton>
         </HeaderButtonContainer>
       </div>
     </HeaderLayout>
