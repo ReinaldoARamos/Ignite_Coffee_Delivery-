@@ -45,6 +45,6 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
   ${({ variant, theme }) =>
     variant === "purple" &&
     css`
-      color: ${theme.colors[`brand-purple`]};
+     svg  color: ${theme.colors[`brand-purple`]};
     `}
 `;
