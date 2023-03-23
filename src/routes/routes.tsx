@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { DefaultLayout } from "../DefaultLayout";
+import { DefaultLayout } from "../layout";
 
 import { CartPage } from "../Pages/Cart";
 
