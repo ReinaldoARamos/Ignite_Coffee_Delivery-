@@ -11,10 +11,11 @@ export function Header() {
         <img src={CoffeeDeliveryLogo} />
        
         <HeaderButtonContainer>
-          <HeaderButton>
-          <MapPin size={24} />
-          <ShoppingCart size={24}/>
-          </HeaderButton>
+          <HeaderButton variant="purple">
+          <MapPin size={20} weight="fill" />
+          Porto Alegre, RS
+          
+         </HeaderButton>
         </HeaderButtonContainer>
       </div>
     </HeaderLayout>
