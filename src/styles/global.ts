@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const globalStyle = createGlobalStyle`
 
@@ -8,4 +8,8 @@ export const globalStyle = createGlobalStyle`
     box-sizing: border-box;
     outline: none
 } 
+
+body {
+    background: ${(props) =>  props.theme.;
+}
 `
