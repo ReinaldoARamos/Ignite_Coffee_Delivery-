@@ -30,3 +30,11 @@ font-family: 'Roboto Mono', monospace;
 margin-top: 1rem;
 
 `
+
+export const BenefitsContainer = styled.div`
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 1.25rem;
+margin-top: 4.12rem;
+`

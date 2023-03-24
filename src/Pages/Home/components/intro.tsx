@@ -1,4 +1,4 @@
-import { IntroContainer, IntroContent, IntroText, IntroTitle } from "./styles";
+import { BenefitsContainer, IntroContainer, IntroContent, IntroText, IntroTitle } from "./styles";
 import CoffeeIntro from "../../../assets/IntroCoffee.png";
 export function Intro() {
   return (
@@ -14,9 +14,20 @@ export function Intro() {
            <IntroText size="l">
             Com o Coffe Delivery você recebe seu café onde estiver a qualquer hora
            </IntroText>
+
+           <BenefitsContainer>
+          <p>DOri</p>
+          <p>DOri</p>
+          <p>DOri</p>
+          <p>DOri</p> 
+        </BenefitsContainer>
+        
           </div>
+
+          
           <img src={CoffeeIntro} />
         </IntroContent>
+        
       </IntroContainer>
     </>
   );
