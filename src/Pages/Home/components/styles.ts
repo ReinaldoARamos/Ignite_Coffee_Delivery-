@@ -1,5 +1,7 @@
-import styled from 'styled-components
+import styled from 'styled-components'
 
-export const introContainer =  styled.div`
+export const IntroContainer =  styled.section`
 
+    width: 100%;
+    height: 34rem
 `
