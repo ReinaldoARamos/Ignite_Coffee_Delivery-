@@ -1,10 +1,13 @@
 import { Intro } from "./components/intro";
+import { HomeCOntainer } from "./styles";
 
 export function Homepage() {
   return (
     <>
-      <h1>Home</h1>
-      <Intro />
+<HomeCOntainer>
+<Intro />
+</HomeCOntainer>
+    
     </>
   );
 }
