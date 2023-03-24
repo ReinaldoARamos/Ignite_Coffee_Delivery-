@@ -1,12 +1,11 @@
 import { Intro } from "./components/intro";
-import { HomeCOntainer } from "./styles";
-
+import { HomeContainer } from "./styles";
 export function Homepage() {
   return (
     <>
-<HomeCOntainer>
-<Intro />
-</HomeCOntainer>
+<HomeContainer>
+<Intro/>
+</HomeContainer>
     
     </>
   );

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
-export const HomeCOntainer = styled.div`
+export const HomeContainer = styled.div`
 margin-bottom: 9.8rem;
 ` 
+
