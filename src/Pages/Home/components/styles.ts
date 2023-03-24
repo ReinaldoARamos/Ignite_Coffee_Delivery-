@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import introUrlPngImg from "../../../assets/Background.png";
-import { TitleText } from "../../../Components/Header/Typography";
+import { TitleText , RegularText} from "../../../Components/Header/Typography";
 export const IntroContainer = styled.section`
   width: 100%;
   height: 34rem;
@@ -17,4 +17,12 @@ export const IntroContent = styled.div`
 
 export const IntroTitle = styled(TitleText)`
   margin-bottom: 1rem;
+ 
 `;
+
+export const IntroText = styled(RegularText)`
+font-family: 'Roboto Mono', monospace;
+
+margin-top: 1rem;
+
+`

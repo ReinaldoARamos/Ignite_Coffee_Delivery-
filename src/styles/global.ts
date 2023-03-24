@@ -13,12 +13,13 @@ body {
     background: ${({theme}) =>  theme.colors['base-background']};
     color: ${({theme}) => theme.colors['base-text']};
     -webkit-font-smoothing: antialiased;
+    font-family: ${({theme}) => theme.fonts.regular};
 }
 
 border-style, input-security, textarea, button {
     font-family: ${({theme}) => theme.fonts.regular};
     font-weight: 400;
-    font-size: ${({theme})=> theme.textSizes["text-regular-m"]};
+    font-size: ${({theme})=> theme.textSizes["text-regular-l"]};
 }
 
 button{
