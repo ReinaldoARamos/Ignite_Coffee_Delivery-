@@ -5,7 +5,7 @@ export function Intro() {
     <>
       <IntroContainer>
         <IntroContent className="container">
-            <div>teste</div>
+            <div>Intro</div>
         </IntroContent>
       </IntroContainer>
     </>
