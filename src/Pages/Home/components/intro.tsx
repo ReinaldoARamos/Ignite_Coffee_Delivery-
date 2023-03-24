@@ -4,7 +4,7 @@ export function Intro() {
   return (
     <>
       <IntroContainer>
-        Oi
+        Intro
       </IntroContainer>
     </>
   );
