@@ -7,7 +7,7 @@ export function Intro() {
         <IntroContent className="container">
           <div>
             <section>
-              <IntroTitle size="xl">
+              <IntroTitle size="xl" color="subtitle" as="h3">
                 Encontre o café perfeito para qualquer hora do dia
               </IntroTitle>
             </section>
