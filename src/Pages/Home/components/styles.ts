@@ -6,6 +6,10 @@ export const IntroContainer = styled.section`
   height: 34rem;
   background: ${() => `url(${introUrlPngImg}) no-repeat center`};
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items:center
 `;
 
 export const IntroContent = styled.div`
