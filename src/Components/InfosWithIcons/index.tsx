@@ -8,11 +8,11 @@ interface infoWithIconProps{
 
 }
 
-export function InfoWithIcon({iconm text, iconBg} : infoWithIconProps) {
+export function InfoWithIcon({icon, text, iconBg} : infoWithIconProps) {
   return (
   <>
   <InfoWithContainer>
-    <IconContainer>{icon}</IconContainer>
+    <IconContainer iconBg={iconBg}>{icon}</IconContainer>
   </InfoWithContainer>
   </>
   )

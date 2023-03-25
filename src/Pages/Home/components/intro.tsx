@@ -1,6 +1,11 @@
 import { BenefitsContainer, IntroContainer, IntroContent, IntroText, IntroTitle } from "./styles";
 import CoffeeIntro from "../../../assets/IntroCoffee.png";
+import { InfoWithIcon } from "../../../Components/InfosWithIcons";
+import {ShoppingCart} from 'phosphor-react'
+import { useTheme } from "styled-components";
 export function Intro() {
+
+  const {colors} = useTheme()
   return (
     <>
       <IntroContainer>
@@ -16,7 +21,12 @@ export function Intro() {
            </IntroText>
 
            <BenefitsContainer>
-          <p>DOri</p>
+          <InfoWithIcon 
+          icon={<ShoppingCart weight="fill"/>}
+          text="compra simples"
+          iconBg={colors["brand-yellow-dark"]}
+          
+          />
           <p>DOri</p>
           <p>DOri</p>
           <p>DOri</p> 
