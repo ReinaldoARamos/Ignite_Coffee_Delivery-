@@ -13,6 +13,7 @@ export function InfoWithIcon({icon, text, iconBg} : infoWithIconProps) {
   <>
   <InfoWithContainer>
     <IconContainer iconBg={iconBg}>{icon}</IconContainer>
+    {text}
   </InfoWithContainer>
   </>
   )
