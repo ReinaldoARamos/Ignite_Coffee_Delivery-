@@ -1,4 +1,5 @@
 import { Intro } from "./components/intro/intro";
+import { OurCoffee } from "./components/OurCoffes";
 import { HomeContainer } from "./styles";
 export function Homepage() {
   return (
@@ -6,7 +7,7 @@ export function Homepage() {
 <HomeContainer>
 <Intro/>
 </HomeContainer>
-    
+    <OurCoffee/>
     </>
   );
 }
