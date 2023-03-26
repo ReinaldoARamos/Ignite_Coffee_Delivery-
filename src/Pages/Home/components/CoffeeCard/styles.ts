@@ -13,7 +13,7 @@ flex-direction: column ;
 align-items: center ;
 justify-content: center ;
 padding-top:0 ;
-
+text-align: center;
 img{
     width: 7.5rem ;
     height: 7.5rem;
@@ -58,7 +58,7 @@ export const Description = styled(RegularText).attrs({
     color: 'label',
     weight: 700
 })`
-margin-top: 0.5rem ;
+margin-bottom: 0.5rem ;
 display: flex ;
 align-items: center ;
 justify-content: center ;
