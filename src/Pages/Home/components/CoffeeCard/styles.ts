@@ -64,3 +64,21 @@ align-items: center ;
 justify-content: center ;
 
 `
+
+export const CardFooter = styled.div`
+width: 100% ;
+display: flex ;
+align-items: center ;
+justify-content:  center;
+
+>div{
+    display: flex ;
+    align-items: center ;
+    gap: 3px
+
+   
+}
+p{
+        line-height: 0.75rem ;
+    }
+`
