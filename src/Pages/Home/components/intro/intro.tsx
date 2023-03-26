@@ -1,6 +1,6 @@
 import { BenefitsContainer, IntroContainer, IntroContent, IntroText, IntroTitle } from "./styles";
-import CoffeeIntro from "../../../assets/IntroCoffee.png";
-import { InfoWithIcon } from "../../../Components/InfosWithIcons";
+import CoffeeIntro from "../../../../assets/IntroCoffee.png";
+import { InfoWithIcon } from "../../../../Components/InfosWithIcons";
 import {ShoppingCart, Clock, Package, Coffee} from 'phosphor-react'
 import { useTheme } from "styled-components";
 export function Intro() {

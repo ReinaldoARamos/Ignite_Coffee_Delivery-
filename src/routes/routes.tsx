@@ -4,7 +4,7 @@ import { DefaultLayout } from "../layout";
 import { CartPage } from "../Pages/Cart";
 import { Homepage } from "../Pages/Home";
 
-import { Intro } from "../Pages/Home/components/intro";
+import { Intro } from "../Pages/Home/components/intro/intro";
 import { defaultTheme } from "../styles/themes/default";
 
 export function Router() {

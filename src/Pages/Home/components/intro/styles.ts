@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import introUrlPngImg from "../../../assets/Background.png";
-import { TitleText , RegularText} from "../../../Components/Header/Typography";
+import introUrlPngImg from "../../../../assets/Background.png";
+import { TitleText , RegularText} from "../../../../Components/Header/Typography";
 export const IntroContainer = styled.section`
   width: 100%;
   height: 34rem;

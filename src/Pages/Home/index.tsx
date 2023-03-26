@@ -1,4 +1,4 @@
-import { Intro } from "./components/intro";
+import { Intro } from "./components/intro/intro";
 import { HomeContainer } from "./styles";
 export function Homepage() {
   return (
