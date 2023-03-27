@@ -26,5 +26,26 @@ input{
 export const IconWrapper = styled.button.attrs({
     type: "button"
 })`
+width: 0.875rem ;
+height: 0.875rem ;
+background: none ;
+border: none ;
+color: ${({theme}) =>  theme.colors["brand-purple-dark"]} ;
+display: flex;
+transition: 0.4s ;
 
+&:disabled{
+    opacity: 0.4 ;
+
+}
+
+&:not(:disabled){
+    color: ${({theme}) =>  theme.colors["brand-purple"]} ;
+    
+    
+}
+
+&:hover{
+    color: ${({theme}) =>  theme.colors["brand-purple"]} ;
+}
 `

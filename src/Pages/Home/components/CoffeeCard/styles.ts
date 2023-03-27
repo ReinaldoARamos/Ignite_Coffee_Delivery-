@@ -26,7 +26,7 @@ export const CoffeeCardContainer = styled.div`
 export const Tags = styled.div`
   width: 100%;
   display: flex;
-
+  justify-content: center ;
   align-items: center;
   gap: 4rem;
   margin-top: 1rem;
