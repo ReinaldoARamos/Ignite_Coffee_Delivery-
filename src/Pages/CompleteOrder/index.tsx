@@ -1,4 +1,5 @@
-import { CompleteOrderForm } from "./components";
+
+import { CompleteOrderForm } from "./components/CompleteOrderForm";
 import { COmpleteOrderContainer } from "./styles";
 
 export function CartPage() {

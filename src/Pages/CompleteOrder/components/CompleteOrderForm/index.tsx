@@ -1,5 +1,6 @@
-import { TitleText } from "../../../Components/Header/Typography";
-import { CompleteOrderFormContainer } from "./CompleteOrderForm/st/styles";
+import { TitleText } from "../../../../Components/Header/Typography";
+import { CompleteOrderFormContainer } from "./style";
+
 
 export function CompleteOrderForm() {
     return(
