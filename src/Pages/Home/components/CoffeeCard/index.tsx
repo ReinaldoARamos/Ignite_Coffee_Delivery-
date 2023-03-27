@@ -33,7 +33,7 @@ export function CoffeeCards({coffee} : CoffeeProps) {
   return (
     
     <CoffeeCardContainer>
-      <img src={coffee.photo}/>
+      <img src={`/coffees/${coffee.photo}`}/>
       <Tags>
       {coffee.tags.map((tag)=>(
             <span key={`${coffee.id}${tag}`}>{tag}</span> //a gente passa primeiro a id para nao conflitar as tags
