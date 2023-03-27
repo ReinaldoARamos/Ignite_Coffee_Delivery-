@@ -9,6 +9,7 @@ import {
   Name,
   Tags,
   CardFooter,
+  AddCartWrapper,
 } from "./styles";
 
 export function CoffeeCards() {
@@ -29,9 +30,11 @@ export function CoffeeCards() {
           <TitleText size="m" color="text" as="strong">
             9.90
           </TitleText>
+          <AddCartWrapper>
           <QuantityInput>
-            100
-          </QuantityInput>
+            
+            </QuantityInput>
+          </AddCartWrapper>
         </div>
        
       </CardFooter>

@@ -82,3 +82,13 @@ p{
         line-height: 0.75rem ;
     }
 `
+
+export const AddCartWrapper = styled.div`
+
+width: 7.5rem ;
+
+>button{
+    width: 2.375rem ;
+    height: 2.375rem
+}
+`
