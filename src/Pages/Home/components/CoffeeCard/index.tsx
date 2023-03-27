@@ -1,5 +1,15 @@
-import { RegularText, TitleText } from "../../../../Components/Header/Typography";
-import { CoffeeCardContainer, Description, Name, Tags , CardFooter} from "./styles";
+import {
+  RegularText,
+  TitleText,
+} from "../../../../Components/Header/Typography";
+import { QuantityInput } from "../../../../Components/QuantityInput";
+import {
+  CoffeeCardContainer,
+  Description,
+  Name,
+  Tags,
+  CardFooter,
+} from "./styles";
 
 export function CoffeeCards() {
   return (
@@ -15,11 +25,17 @@ export function CoffeeCards() {
       </Description>
       <CardFooter>
         <div>
-            <RegularText size="s" >R$</RegularText>
-            <TitleText size="m" color="text" as="strong">9.90</TitleText>
+          <RegularText size="s">R$</RegularText>
+          <TitleText size="m" color="text" as="strong">
+            9.90
+          </TitleText>
+          <QuantityInput>
+            100
+          </QuantityInput>
         </div>
+       
       </CardFooter>
-    </CoffeeCardContainer>
     
+    </CoffeeCardContainer>
   );
 }
