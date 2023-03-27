@@ -4,6 +4,7 @@ import {
   TitleText,
 } from "../../../../Components/Header/Typography";
 import { QuantityInput } from "../../../../Components/QuantityInput";
+import { FormatNumber } from "../../../../utils/formatMoney";
 import {
   CoffeeCardContainer,
   Description,
@@ -28,7 +29,9 @@ interface CoffeeProps{
 }
 
 export function CoffeeCards({coffee} : CoffeeProps) {
+  const formattedPrice = FormatNumber(coffee.price)
   return (
+    
     <CoffeeCardContainer>
       <img src={coffee.photo}/>
       <Tags>
@@ -47,7 +50,7 @@ export function CoffeeCards({coffee} : CoffeeProps) {
         <div>
           <RegularText size="s">R$</RegularText>
           <TitleText size="m" color="text" as="strong">
-          {coffee.price}
+          {formattedPrice}
           </TitleText>
           <AddCartWrapper>
       
