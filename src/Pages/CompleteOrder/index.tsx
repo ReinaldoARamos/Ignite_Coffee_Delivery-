@@ -8,7 +8,7 @@ export function CartPage() {
         <COmpleteOrderContainer className="container">
 
             <CompleteOrderForm></CompleteOrderForm>
-
+            
         </COmpleteOrderContainer>
         )
 }

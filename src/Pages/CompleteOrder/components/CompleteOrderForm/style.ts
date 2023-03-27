@@ -6,3 +6,10 @@ flex-direction: column ;
 gap:0.75rem;
 width: 40rem ;
 `
+
+export const SectionBaseStyle = styled.div`
+width: 100% ;
+background: ${({theme}) => theme.colors["base-card"]} ;
+border: 6px ;
+padding: 2.5rem ;
+` 
