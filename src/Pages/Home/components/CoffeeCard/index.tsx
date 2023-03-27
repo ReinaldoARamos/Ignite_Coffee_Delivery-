@@ -1,3 +1,4 @@
+import { ShoppingCart } from "phosphor-react";
 import {
   RegularText,
   TitleText,
@@ -31,14 +32,16 @@ export function CoffeeCards() {
             9.90
           </TitleText>
           <AddCartWrapper>
-          <QuantityInput>
-            
-            </QuantityInput>
+      
           </AddCartWrapper>
         </div>
-       
+        <AddCartWrapper>
+        <QuantityInput />
+        <button>
+          <ShoppingCart size={22} weight="fill"/>
+        </button>
+        </AddCartWrapper>
       </CardFooter>
-    
     </CoffeeCardContainer>
   );
 }
