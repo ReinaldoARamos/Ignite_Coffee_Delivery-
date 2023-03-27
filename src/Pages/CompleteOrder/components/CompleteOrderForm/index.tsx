@@ -4,6 +4,7 @@ import { FormSectionContainer } from "../../styles";
 import { SectionTitle } from "../SectionTitle";
 import { CompleteOrderFormContainer } from "./style";
 import { useTheme } from "styled-components";
+import { AdressForm } from "./AdressForm";
 export function CompleteOrderForm() {
   const colors = useTheme()
     return (
@@ -19,6 +20,7 @@ export function CompleteOrderForm() {
           subtitle="Informe o endereço de entrega"
           
         />
+        <AdressForm/>
       </FormSectionContainer>
     </CompleteOrderFormContainer>
   );
