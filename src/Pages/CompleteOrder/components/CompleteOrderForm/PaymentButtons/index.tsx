@@ -10,7 +10,8 @@ export function PaymentButton({icon, text} : PayButtonProps) {
     
         return(
         <PaymentButtonStyle >
-           {icon} {text}
+           {icon} 
+           {text}
         </PaymentButtonStyle>
         )
 }
