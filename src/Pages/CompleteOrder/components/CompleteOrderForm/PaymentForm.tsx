@@ -1,6 +1,6 @@
 import { Money, CreditCard, Bank } from "phosphor-react";
 import { useTheme } from "styled-components";
-import { PaymentButton } from "./PaymentButtons";
+import { PaymentButton } from "../../components/PaymentButtons/index";
 import { PaymentButtonContainer, PaymentFormContainer } from "./style";
 
 export function PaymentForm() {

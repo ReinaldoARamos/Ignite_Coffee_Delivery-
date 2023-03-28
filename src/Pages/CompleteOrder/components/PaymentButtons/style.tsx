@@ -18,4 +18,6 @@ export const PaymentButtonStyle = styled.button`
     border: 1px solid ${({ theme }) => theme.colors["brand-purple"]};
     background: ${({theme}) => theme.colors["base-white"]} ;
   }
+
+ 
 `;
