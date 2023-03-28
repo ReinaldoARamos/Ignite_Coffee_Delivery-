@@ -25,7 +25,6 @@ export function CompleteOrderForm() {
        
 
       </FormSectionContainer>
-      
       <PaymentForm/>
     </CompleteOrderFormContainer>
   );
