@@ -10,7 +10,9 @@ export function SelectedCoffees() {
             Cafés Selecionados
         </TitleText>
         <DetailsContainer>
-            <CoffeeCartCard></CoffeeCartCard>
+            <CoffeeCartCard />
+            <CoffeeCartCard />
+            
         </DetailsContainer>
     </SelectedCoffeesContainer>
     )
