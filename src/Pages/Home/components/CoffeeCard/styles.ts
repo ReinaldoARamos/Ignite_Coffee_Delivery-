@@ -7,7 +7,7 @@ import {
 export const CoffeeCardContainer = styled.div`
   width: 100%;
   background: ${({ theme }) => theme.colors["base-card"]};
-
+  margin-bottom: 1.375rem;
   border-radius: 6px 36px 6px 36px;
   padding: 1.25rem;
   display: flex;
