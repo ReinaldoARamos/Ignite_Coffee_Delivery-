@@ -3,6 +3,7 @@ import { AdressFormContainer } from "./style";
 
 export function AdressForm() {
     return(
+        <>
 <AdressFormContainer>
     <InputText placeholder="CEP" className="cep" type="number"/>
     <InputText placeholder="Rua" className="street" />
@@ -13,6 +14,8 @@ export function AdressForm() {
     <InputText placeholder="Cidade" />
     <InputText placeholder="UF"/>
 </AdressFormContainer>
+
+</>
 
     )
 }
