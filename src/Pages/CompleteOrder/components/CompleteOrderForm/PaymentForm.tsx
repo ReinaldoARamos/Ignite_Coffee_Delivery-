@@ -12,11 +12,11 @@ export function PaymentForm() {
         icon={<Money size={20} color={colors.colors["brand-purple-dark"]} />}
       />
       <PaymentButton
-        text="Cartão de Credito"
+        text="Crédito"
         icon={<CreditCard size={20} color={colors.colors["brand-purple-dark"]} />}
       />
       <PaymentButton
-        text="Cartão de débito"
+        text="Débito"
         icon={<Bank size={20} color={colors.colors["brand-purple-dark"]} />}
       />
     </PaymentButtonContainer>
