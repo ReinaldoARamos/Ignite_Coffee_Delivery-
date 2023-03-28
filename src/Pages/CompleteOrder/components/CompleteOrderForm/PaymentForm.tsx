@@ -1,14 +1,24 @@
-import { Money } from "phosphor-react";
+import { Money, CreditCard, Bank } from "phosphor-react";
 import { useTheme } from "styled-components";
 import { PaymentButton } from "./PaymentButtons";
-import { PaymentFormContainer } from "./style";
+import { PaymentButtonContainer, PaymentFormContainer } from "./style";
 
 export function PaymentForm() {
   const colors = useTheme();
   return (
-    <PaymentFormContainer>
-    <PaymentButton text="Dori" icon={<Money size={20} color={colors.colors["brand-purple-dark"]}/>}/>
-   
-    </PaymentFormContainer>
+    <PaymentButtonContainer>
+      <PaymentButton
+        text="Dinheiro"
+        icon={<Money size={20} color={colors.colors["brand-purple-dark"]} />}
+      />
+      <PaymentButton
+        text="Cartão de Credito"
+        icon={<CreditCard size={20} color={colors.colors["brand-purple-dark"]} />}
+      />
+      <PaymentButton
+        text="Cartão de débito"
+        icon={<Bank size={20} color={colors.colors["brand-purple-dark"]} />}
+      />
+    </PaymentButtonContainer>
   );
 }

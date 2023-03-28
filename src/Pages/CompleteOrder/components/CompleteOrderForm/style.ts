@@ -39,6 +39,12 @@ grid-auto-flow: dense;
 `
 
 export const PaymentFormContainer = styled(SectionBaseStyle)`
-    
+    margin-bottom: 15rem;
 
+`
+
+export const PaymentButtonContainer = styled.div`
+margin-top: 3rem;
+display: flex;
+gap: 2rem
 `
