@@ -7,7 +7,8 @@ export function AdressForm() {
     <InputText placeholder="CEP" className="cep" type="number"/>
     <InputText placeholder="Rua" className="street" />
     <InputText placeholder="Numero"  type="number"/>
-    <InputText placeholder="Complemento" className="complement" />
+    <InputText placeholder="Complemento         
+                                                opcional" className="complement" />
     <InputText placeholder="Bairro"  />
     <InputText placeholder="Cidade" />
     <InputText placeholder="UF"/>

@@ -24,6 +24,8 @@ grid-auto-flow: dense;
 .cep{
     grid-column: span 3 ; //faz o cep ocupar 3 colunas
     max-width: 12.5rem ;
+    display: flex;
+    justify-content: space-between;
 }
 
 .street{
