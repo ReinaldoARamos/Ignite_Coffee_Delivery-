@@ -115,4 +115,13 @@ export const coffees = [
       photo: "irlandes.png",
       price: 9.9,
     },
+
+    {
+      id: 15,
+      tags: ["especial", "Gelado"],
+      name: "Frappucino",
+      description: "Bebida feita com café, leite, gelo, chantilly e outros complementos",
+      photo: "frappucino.png",
+      price: 12.5,
+    },
   ];
