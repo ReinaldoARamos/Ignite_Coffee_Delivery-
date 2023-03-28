@@ -5,6 +5,7 @@ import { SectionTitle } from "../SectionTitle";
 import { CompleteOrderFormContainer } from "./style";
 import { useTheme } from "styled-components";
 import { AdressForm } from "./AdressForm";
+import { PaymentForm } from "./PaymentForm";
 export function CompleteOrderForm() {
   const colors = useTheme()
     return (
@@ -21,7 +22,11 @@ export function CompleteOrderForm() {
           
         />
         <AdressForm/>
+       
+
       </FormSectionContainer>
+      
+      <PaymentForm/>
     </CompleteOrderFormContainer>
   );
 }

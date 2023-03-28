@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const CompleteOrderFormContainer = styled.div`
 display: flex ;
 flex-direction: column ;
@@ -35,4 +36,10 @@ grid-auto-flow: dense;
 .complement{
     grid-column: span 2 ;
 }
+`
+
+export const PaymentFormContainer = styled.div`
+width: 100%;
+background: ${({theme}) => theme.colors["base-card"]} ;
+
 `
