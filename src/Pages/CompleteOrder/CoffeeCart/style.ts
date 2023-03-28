@@ -15,9 +15,11 @@ justify-content: space-between;
     border-bottom: 1px solid ${({theme}) => theme.colors["base-button"]} ;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
+    
 }
 
 >p{
+   
     font-weight: 700;
     align-self: flex-start;
     
