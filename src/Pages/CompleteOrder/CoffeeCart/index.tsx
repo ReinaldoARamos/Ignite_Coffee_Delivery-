@@ -2,7 +2,9 @@ import { RegularText } from "../../../Components/Header/Typography";
 import { ActionsContainer, RemoveButton, CoffeeCardContainer } from "./style";
 import { QuantityInput } from "../../../Components/QuantityInput";
 import { Trash } from "phosphor-react";
+import { useTheme } from "styled-components";
 export function CoffeeCartCard() {
+    const color = useTheme();
   return (
     <CoffeeCardContainer>
       <div>
@@ -12,8 +14,9 @@ export function CoffeeCartCard() {
           <ActionsContainer>
             <QuantityInput />
             <RemoveButton>
-                Remover
-              <Trash size={16} />
+                
+              <Trash size={20} color={color.colors["brand-purple-dark"]} />
+              Remover
             </RemoveButton>
           </ActionsContainer>
         </div>
