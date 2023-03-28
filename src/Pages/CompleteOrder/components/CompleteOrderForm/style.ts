@@ -38,8 +38,7 @@ grid-auto-flow: dense;
 }
 `
 
-export const PaymentFormContainer = styled.div`
-width: 100%;
-background: ${({theme}) => theme.colors["base-card"]} ;
+export const PaymentFormContainer = styled(SectionBaseStyle)`
+    
 
 `
