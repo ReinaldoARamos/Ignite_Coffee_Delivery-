@@ -12,13 +12,14 @@ transition: 0.4s ;
 {
     border-color:  ${({ theme }) => theme.colors["brand-yellow-dark"]}
 }
+&::placeholder{
+    color: ${({ theme }) => theme.colors["base-label"]};
+}
+
 
 color: ${({ theme }) => theme.colors["base-text"]};
 font-size: 0.75rem;
 padding: 0.75rem;
 
-&::placeholder{
-    color: ${({ theme }) => theme.colors["base-label"]};
-}
 
 `
