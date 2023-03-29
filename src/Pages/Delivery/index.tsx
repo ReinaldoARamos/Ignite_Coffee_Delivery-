@@ -1,7 +1,7 @@
 import { useTheme } from "styled-components";
 import { RegularText, TitleText } from "../../Components/Header/Typography";
-import { DeliveryContainer } from "./style";
-
+import { DeliveryContainer, OrderDetailsContainer } from "./style";
+import GuyOnABike from '../../../public/coffees/Illustration.png'
 export function Delivery() {
   return (
     <DeliveryContainer className="container">
@@ -11,6 +11,16 @@ export function Delivery() {
           Agora é só aguardar
         </RegularText>
       </div>
+
+      <section>
+
+        
+        <OrderDetailsContainer>
+        Eae
+        
+        </OrderDetailsContainer>
+        <img src={GuyOnABike} />
+      </section>
     </DeliveryContainer>
   );
 }
