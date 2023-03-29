@@ -15,9 +15,8 @@ export function Delivery() {
       <section>
 
         
-        <OrderDetailsContainer  >
+        <OrderDetailsContainer >
         Eae
-        
         </OrderDetailsContainer>
         <img src={GuyOnABike} />
       </section>

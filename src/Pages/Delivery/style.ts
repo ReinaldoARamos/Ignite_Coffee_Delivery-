@@ -18,13 +18,27 @@ export const DeliveryContainer = styled.div`
 `;
 
 export const OrderDetailsContainer = styled.div`
-  width: 32.875rem;
+  min-width: 32.875rem;
   height: 16.875rem;
   display: flex;
-  border: 1px solid red;
   flex-direction: column;
   padding: 2.5rem;
   gap: 2rem;
   margin-right: 6.375rem ;
   border-radius: 6px 44px 6px 44px;
+  background: ${({ theme }) => theme.colors["base-background"]};
+  position: relative;
+  
+
+&::before{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: 7px 45px 7px 45px;
+    z-index: -1;
+    background: linear-gradient(102.89deg, #DBAC2C 2.61%, #8047F8 98.76%);;
+    
+
+
+}
 `;
