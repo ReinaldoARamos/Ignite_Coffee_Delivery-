@@ -1,3 +1,4 @@
+import { ButtonConfirm } from "../../../Components/Button";
 import { RegularText } from "../../../Components/Header/Typography";
 import { ConfirmationSectionContainer } from "./style";
 
@@ -19,6 +20,8 @@ export function ConfirmationSection() {
                 <RegularText size="l" weight={700} color="subtitle">Total</RegularText>
                 <RegularText size="l" weight={700} color="subtitle" >R$: 3.50</RegularText>
             </div>
+           
+           <ButtonConfirm/>
         </ConfirmationSectionContainer>
     )
 }
