@@ -15,7 +15,7 @@ export function Delivery() {
       <section>
 
         
-        <OrderDetailsContainer>
+        <OrderDetailsContainer  >
         Eae
         
         </OrderDetailsContainer>

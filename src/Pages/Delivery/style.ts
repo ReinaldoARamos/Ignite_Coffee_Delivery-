@@ -24,6 +24,7 @@ export const OrderDetailsContainer = styled.div`
   border: 1px solid red;
   flex-direction: column;
   padding: 2.5rem;
-
+  gap: 2rem;
+  margin-right: 6.375rem ;
   border-radius: 6px 44px 6px 44px;
 `;
