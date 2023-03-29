@@ -1,5 +1,5 @@
 export function Delivery() {
     return(
-        <h1>Delivery</h1>
+        <h1 className="container">Delivery</h1>
     )
 }  
