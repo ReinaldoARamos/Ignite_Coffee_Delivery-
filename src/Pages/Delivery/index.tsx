@@ -31,7 +31,7 @@ export function Delivery() {
           <InfoWithIcon
             icon={<Clock weight="fill" />}
             text={
-              <RegularText size="s" color="subtitle">
+              <RegularText >
                 Previsão de entrega <br /> <strong>20-30 minutos</strong>
               </RegularText>
             }
