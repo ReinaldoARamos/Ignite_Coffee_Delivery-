@@ -118,7 +118,7 @@ export const coffees = [
 
     {
       id: 15,
-      tags: ["especial", "Gelado"],
+      tags: ["especial", "Gelado", "Com Leite"],
       name: "Frappucino",
       description: "Bebida feita com café, leite, gelo, chantilly e outros complementos",
       photo: "frappucino.png",
