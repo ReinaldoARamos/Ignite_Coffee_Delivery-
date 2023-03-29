@@ -18,10 +18,12 @@ export const DeliveryContainer = styled.div`
 `;
 
 export const OrderDetailsContainer = styled.div`
-/*
-display: flex;
-border: 1px solid red;
-border-radius: 9px;
-flex-direction: column;
-*/ 
-`
+  width: 32.875rem;
+  height: 16.875rem;
+  display: flex;
+  border: 1px solid red;
+  flex-direction: column;
+  padding: 2.5rem;
+
+  border-radius: 6px 44px 6px 44px;
+`;

@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
+import { NavLink } from "react-router-dom";
 import { ButtonContainer } from "./style";
 
 interface ButtonProps  extends ButtonHTMLAttributes<HTMLButtonElement>{
@@ -6,7 +7,14 @@ interface ButtonProps  extends ButtonHTMLAttributes<HTMLButtonElement>{
 }
 
 export function ButtonConfirm({text, ...props} : ButtonProps) {
-  return <ButtonContainer {...props}>
+  return (
+  
+  <ButtonContainer {...props}>
+    
    {text}
-  </ButtonContainer>;
+  </ButtonContainer>
+
+  )
+  
+
 }
