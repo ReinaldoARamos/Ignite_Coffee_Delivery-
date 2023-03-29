@@ -21,7 +21,7 @@ export function ConfirmationSection() {
                 <RegularText size="l" weight={700} color="subtitle" >R$: 3.50</RegularText>
             </div>
            
-           <ButtonConfirm/>
+           <ButtonConfirm text={"Confirmar Pedido"}/>
         </ConfirmationSectionContainer>
     )
 }
