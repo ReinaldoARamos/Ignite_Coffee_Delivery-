@@ -20,7 +20,7 @@ export function CoffeeCartCard({coffee}: CoffeeCartCardProps) {
         <div>
           <RegularText  size="s" color="subtitle" >{coffee.name}</RegularText>
           <ActionsContainer>
-            <QuantityInput />
+            <QuantityInput quantity={coffee.quantity} />
             <RemoveButton>
                 
               <Trash size={20} color={color.colors["brand-purple-dark"]} />
