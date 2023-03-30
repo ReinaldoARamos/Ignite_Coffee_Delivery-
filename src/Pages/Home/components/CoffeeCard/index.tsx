@@ -13,54 +13,70 @@ import {
   CardFooter,
   AddCartWrapper,
 } from "./styles";
-
-
-export interface Coffee{
-id: number;
-tags: string[];
-name:string;
-description: string;
-photo: string;
-price: number;
+import { UseCart } from "../../../../utils/hooks/useContext";
+import { useState } from "react";
+export interface Coffee {
+  id: number;
+  tags: string[];
+  name: string;
+  description: string;
+  photo: string;
+  price: number;
 }
 
-interface CoffeeProps{
-  coffee: Coffee
+interface CoffeeProps {
+  coffee: Coffee;
 }
 
-export function CoffeeCards({coffee} : CoffeeProps) {
-  const formattedPrice = FormatNumber(coffee.price)
+export function CoffeeCards({ coffee }: CoffeeProps) {
+  const [ quantity, setQuantity ] = useState(1);
+  const { addCoffeeToCart } = UseCart();
+
+  function handleAddToCart() {
+    const coffeeToAdd = {
+      ...coffee,
+      quantity: 1,
+    };
+    addCoffeeToCart(coffeeToAdd);
+  }
+function handleIncrease() {
+    setQuantity((state) => state + 1)
+  }
+
+  function handleDecrease() {
+    setQuantity((state) => state - 1)
+  }
+
+
+  const formattedPrice = FormatNumber(coffee.price);
   return (
-    
     <CoffeeCardContainer>
-      <img src={`/coffees/${coffee.photo}`}/>
+      <img src={`/coffees/${coffee.photo}`} />
       <Tags>
-      {coffee.tags.map((tag)=>(
-            <span key={`${coffee.id}${tag}`}>{tag}</span> //a gente passa primeiro a id para nao conflitar as tags
-          ))}
+        {coffee.tags.map((tag) => (
+          <span key={`${coffee.id}${tag}`}>{tag}</span> //a gente passa primeiro a id para nao conflitar as tags
+        ))}
       </Tags>
 
-      <Name>
-     {coffee.name}
-     </Name>
-      <Description>
-      {coffee.description}
-      </Description>
+      <Name>{coffee.name}</Name>
+      <Description>{coffee.description}</Description>
       <CardFooter>
         <div>
           <RegularText size="s">R$</RegularText>
           <TitleText size="m" color="text" as="strong">
-          {formattedPrice}
+            {formattedPrice}
           </TitleText>
-          <AddCartWrapper>
-      
-          </AddCartWrapper>
+          <AddCartWrapper></AddCartWrapper>
         </div>
         <AddCartWrapper>
-        <QuantityInput />
-        <button>
-          <ShoppingCart size={22} weight="fill"/>
-        </button>
+          <QuantityInput 
+          onIncrease = {handleIncrease}
+          onDecrease = {handleDecrease}
+          quantity = {quantity}
+          />
+          <button onClick={handleAddToCart}>
+            <ShoppingCart size={22} weight="fill" />
+          </button>
         </AddCartWrapper>
       </CardFooter>
     </CoffeeCardContainer>

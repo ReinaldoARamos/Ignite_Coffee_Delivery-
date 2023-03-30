@@ -8,6 +8,7 @@ export interface CartItem extends Coffee{
 
 interface CartContextType{
 cartItems: CartItem[]
+addCoffeeToCart: (coffee : CartItem) => void
 }
 
 interface CartContextProviderProps{
@@ -33,7 +34,7 @@ export function  CartContextProvider({children} : CartContextProviderProps ) {
           
     }
     return(
-        <CartContext.Provider value={{cartItems}}>
+        <CartContext.Provider value={{cartItems, addCoffeeToCart}}>
             {children}
         </CartContext.Provider>
     )
