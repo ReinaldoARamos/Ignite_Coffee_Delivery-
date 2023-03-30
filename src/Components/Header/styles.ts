@@ -51,4 +51,21 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
     css`
      svg  color: ${theme.colors[`brand-purple`]};
     `}
+
+    span{
+
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: calc(-1.25rem / 2);
+    right: calc(-1.25rem / 2);
+    background: ${({theme}) => theme.colors["brand-yellow-dark"]};
+    color: ${({theme}) => theme.colors["base-white"]};
+    align-items: center;
+    justify-content: center;
+
+
+    }
 `;
