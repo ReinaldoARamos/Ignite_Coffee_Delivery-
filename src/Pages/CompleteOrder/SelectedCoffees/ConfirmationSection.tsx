@@ -13,12 +13,12 @@ export function ConfirmationSection() {
           
             <div>
                 <RegularText size="s">Frete</RegularText>
-                <RegularText>R$: 29.90</RegularText>
+                <RegularText>R$: 3,50</RegularText>
             </div>
 
             <div>
                 <RegularText size="l" weight={700} color="subtitle">Total</RegularText>
-                <RegularText size="l" weight={700} color="subtitle" >R$: 3.50</RegularText>
+                <RegularText size="l" weight={700} color="subtitle" >R$: 13,00</RegularText>
             </div>
            
            <ButtonConfirm text={"Confirmar Pedido"}/>
