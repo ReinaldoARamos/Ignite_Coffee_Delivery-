@@ -4,25 +4,30 @@ import { UseCart } from "../../../utils/hooks/useContext";
 import { ConfirmationSectionContainer } from "./style";
 
 export function ConfirmationSection() {
-     const {} = UseCart();
-    return(
-        <ConfirmationSectionContainer>
-            <div>
-                <RegularText size="s">Total de itens</RegularText>
-                <RegularText>R$: 9.90</RegularText>
-            </div>
-          
-            <div>
-                <RegularText size="s">Frete</RegularText>
-                <RegularText>R$: 3,50</RegularText>
-            </div>
+     const {cartItems} = UseCart(); 
 
-            <div>
-                <RegularText size="l" weight={700} color="subtitle">Total</RegularText>
-                <RegularText size="l" weight={700} color="subtitle" >R$: 13,00</RegularText>
-            </div>
-           
-           <ButtonConfirm text={"Confirmar Pedido"}/>
-        </ConfirmationSectionContainer>
-    )
+        if(cartItems.length >= 1){
+            return(
+                <ConfirmationSectionContainer>
+                <div>
+                    <RegularText size="s">Total de itens</RegularText>
+                    <RegularText>R$: 9.90</RegularText>
+                </div>
+              
+                <div>
+                    <RegularText size="s">Frete</RegularText>
+                    <RegularText>R$: 3,50</RegularText>
+                </div>
+    
+                <div>
+                    <RegularText size="l" weight={700} color="subtitle">Total</RegularText>
+                    <RegularText size="l" weight={700} color="subtitle" >R$: 13,00</RegularText>
+                </div>
+               
+               <ButtonConfirm text={"Confirmar Pedido"}/>
+            </ConfirmationSectionContainer>
+            )
+        }
+ 
+    
 }

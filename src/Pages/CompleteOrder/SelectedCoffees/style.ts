@@ -14,11 +14,11 @@ display: flex;
 flex-direction: column;
 
 .empty{
-    width: 15rem;
+    width: 25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5rem
+    height: 25rem
 }
 `
 

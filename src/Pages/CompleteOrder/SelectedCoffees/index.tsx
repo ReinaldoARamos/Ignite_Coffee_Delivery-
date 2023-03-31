@@ -1,4 +1,4 @@
-import { TitleText } from "../../../Components/Header/Typography";
+import { RegularText, TitleText } from "../../../Components/Header/Typography";
 import { UseCart } from "../../../utils/hooks/useContext";
 import { CoffeeCartCard } from "../CoffeeCart";
 import { ConfirmationSection } from "./ConfirmationSection";
@@ -7,15 +7,15 @@ import emptyCart from "./../../../assets/empty-card.svg"
 export function SelectedCoffees() {
     const {cartItems} = UseCart();
     const {cartItemsTotal} = UseCart();
-    return(
-
-    <SelectedCoffeesContainer>
+    
+    if(cartItems.length >=1 ){
+        return(
+        <SelectedCoffeesContainer>
         <TitleText size="xs" color="subtitle">
             Cafés Selecionados
         </TitleText>
         <DetailsContainer>
-        {cartItems.length < 1 && <img  src={emptyCart}/>}
-          
+         
         {cartItems.map((item) => (
           <CoffeeCartCard key={item.id} coffee={item} />
         ))}
@@ -25,5 +25,21 @@ export function SelectedCoffees() {
         </DetailsContainer>
         
     </SelectedCoffeesContainer>
-    )
+        )
+    } else{
+        return(
+            <SelectedCoffeesContainer>
+            <TitleText size="xs" color="subtitle">
+                Cafés Selecionados
+            </TitleText>
+            <DetailsContainer>
+            
+            <RegularText size="s" >Carrinnho Vazio!</RegularText>
+            <img  src={emptyCart} className="empty"/>
+            </DetailsContainer>
+            
+        </SelectedCoffeesContainer>
+        )
+    }
+ 
 }
