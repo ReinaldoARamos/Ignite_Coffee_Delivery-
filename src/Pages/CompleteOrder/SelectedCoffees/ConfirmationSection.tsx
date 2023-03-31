@@ -1,9 +1,10 @@
 import { ButtonConfirm } from "../../../Components/Button";
 import { RegularText } from "../../../Components/Header/Typography";
+import { UseCart } from "../../../utils/hooks/useContext";
 import { ConfirmationSectionContainer } from "./style";
 
 export function ConfirmationSection() {
-    
+     const {} = UseCart();
     return(
         <ConfirmationSectionContainer>
             <div>

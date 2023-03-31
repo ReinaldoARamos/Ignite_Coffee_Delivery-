@@ -6,7 +6,7 @@ import { DetailsContainer, SelectedCoffeesContainer } from "./style";
 import emptyCart from "./../../../assets/empty-card.svg"
 export function SelectedCoffees() {
     const {cartItems} = UseCart();
-
+    const {cartItemsTotal} = UseCart();
     return(
 
     <SelectedCoffeesContainer>
@@ -14,7 +14,7 @@ export function SelectedCoffees() {
             Cafés Selecionados
         </TitleText>
         <DetailsContainer>
-        {cartItems.length < 1 && <img  src={emptyCart} className="empty"/>}
+        {cartItems.length < 1 && <img  src={emptyCart}/>}
           
         {cartItems.map((item) => (
           <CoffeeCartCard key={item.id} coffee={item} />

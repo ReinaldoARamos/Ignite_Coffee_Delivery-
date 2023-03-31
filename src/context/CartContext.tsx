@@ -1,5 +1,5 @@
 import produce from "immer";
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useReducer, useState } from "react";
 import { Coffee } from "../Pages/Home/components/CoffeeCard";
 
 export interface CartItem extends Coffee {
@@ -14,7 +14,8 @@ interface CartContextType {
     cartItemId: number,
     type: "increase" | "decrease"
   ) => void;
-  deleteItemCart: (cartItemId: number) => void
+  deleteItemCart: (cartItemId: number) => void,
+  cartItemsTotal: number
 }
 
 interface CartContextProviderProps {
@@ -26,7 +27,9 @@ export const CartContext = createContext({} as CartContextType);
 export function CartContextProvider({ children }: CartContextProviderProps) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const CartQuantity = cartItems.length;
-
+  const cartItemsTotal = cartItems.reduce((total, cartItem) => {
+    return total + cartItem.price * cartItem.quantity
+  }, 0)
   function addCoffeeToCart(coffee: CartItem) {
     const coffeeAlreadyExistInCart = cartItems.findIndex(
       (cartItem) => cartItem.id === coffee.id
@@ -79,7 +82,9 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
         CartQuantity,
         addCoffeeToCart,
         changeCartItemQuantity,
-        deleteItemCart
+        deleteItemCart,
+        cartItemsTotal
+        
       }}
     >
       {children}
