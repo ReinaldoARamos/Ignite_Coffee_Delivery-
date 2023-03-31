@@ -16,6 +16,7 @@ interface CartContextType {
   ) => void;
   deleteItemCart: (cartItemId: number) => void,
   cartItemsTotal: number
+  deliveryTotal: number
 }
 
 interface CartContextProviderProps {
@@ -30,6 +31,10 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
   const cartItemsTotal = cartItems.reduce((total, cartItem) => {
     return total + cartItem.price * cartItem.quantity
   }, 0)
+
+  const deliveryTotal = cartItemsTotal + 3.50
+
+
   function addCoffeeToCart(coffee: CartItem) {
     const coffeeAlreadyExistInCart = cartItems.findIndex(
       (cartItem) => cartItem.id === coffee.id
@@ -83,7 +88,8 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
         addCoffeeToCart,
         changeCartItemQuantity,
         deleteItemCart,
-        cartItemsTotal
+        cartItemsTotal,
+        deliveryTotal
         
       }}
     >
