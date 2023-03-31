@@ -3,6 +3,7 @@ import { RegularText } from "../../../Components/Header/Typography";
 import { UseCart } from "../../../utils/hooks/useContext";
 import { ConfirmationSectionContainer } from "./style";
 import { FormatNumber } from "../../../utils/formatMoney";
+import { NavLink } from "react-router-dom";
 
 export function ConfirmationSection() {
   
@@ -26,11 +27,15 @@ export function ConfirmationSection() {
                     <RegularText size="l" weight={700} color="subtitle">Total</RegularText>
                     <RegularText size="l" weight={700} color="subtitle" >R$: ${formatedTotal} </RegularText>
                 </div>
+          
                
                <ButtonConfirm text={"Confirmar Pedido"}/>
             </ConfirmationSectionContainer>
             )
-        }
+         
+         
+            
+        } 
  
     
 }

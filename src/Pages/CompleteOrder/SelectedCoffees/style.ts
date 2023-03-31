@@ -20,6 +20,12 @@ flex-direction: column;
     justify-content: center;
     height: 25rem
 }
+
+.navlink{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
 `
 
 export const ConfirmationSectionContainer = styled.section`

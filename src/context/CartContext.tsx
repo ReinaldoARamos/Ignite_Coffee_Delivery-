@@ -1,5 +1,5 @@
 import produce from "immer";
-import { createContext, ReactNode, useReducer, useState } from "react";
+import { createContext, ReactNode, useEffect, useReducer, useState } from "react";
 import { Coffee } from "../Pages/Home/components/CoffeeCard";
 
 export interface CartItem extends Coffee {
@@ -23,6 +23,7 @@ interface CartContextProviderProps {
   children: ReactNode;
 }
 
+const COFFEE_ITEMS_STORAGE_KEY = "coffee/delivery:cartItems"
 export const CartContext = createContext({} as CartContextType);
 
 export function CartContextProvider({ children }: CartContextProviderProps) {
@@ -80,6 +81,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     });
     setCartItems(newCart);
   }
+
   return (
     <CartContext.Provider
       value={{

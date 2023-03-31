@@ -4,6 +4,8 @@ import { CoffeeCartCard } from "../CoffeeCart";
 import { ConfirmationSection } from "./ConfirmationSection";
 import { DetailsContainer, SelectedCoffeesContainer } from "./style";
 import emptyCart from "./../../../assets/empty-card.svg"
+import { ButtonConfirm } from "../../../Components/Button";
+import { NavLink } from "react-router-dom";
 export function SelectedCoffees() {
     const {cartItems} = UseCart();
     const {cartItemsTotal} = UseCart();
@@ -34,8 +36,11 @@ export function SelectedCoffees() {
             </TitleText>
             <DetailsContainer>
             
-            <RegularText size="s" >Carrinnho Vazio!</RegularText>
+            <RegularText size="s" >Carrinnho Vazio! </RegularText>
             <img  src={emptyCart} className="empty"/>
+            <NavLink to={"/"} className="navlink">
+     <ButtonConfirm text={"Selecionar Cafés"}/>
+                </NavLink>
             </DetailsContainer>
             
         </SelectedCoffeesContainer>
