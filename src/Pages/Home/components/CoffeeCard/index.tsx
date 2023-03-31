@@ -36,6 +36,7 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
     const coffeeToAdd = {
       ...coffee,
       quantity,
+      
     };
     addCoffeeToCart(coffeeToAdd);
   }
