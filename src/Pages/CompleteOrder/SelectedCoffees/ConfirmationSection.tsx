@@ -29,7 +29,7 @@ export function ConfirmationSection() {
                 </div>
           
                
-               <ButtonConfirm text={"Confirmar Pedido"}/>
+               <ButtonConfirm text={"Confirmar Pedido"} type="submit"/>
             </ConfirmationSectionContainer>
             )
          
