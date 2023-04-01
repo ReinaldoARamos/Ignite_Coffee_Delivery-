@@ -7,7 +7,7 @@ import { useForm, FormProvider } from "react-hook-form";
 import { TypeOf } from "zod/lib";
 
 const confirmOrderFormValidationSchema = zod.object({
-  cep: zod.string(),  //objeto do zod onde fica o sccehema de valdiação do formulario
+  cep: zod.string().min(8, "Digite o CEP").max(8, "Digite o CEP"),  //objeto do zod onde fica o sccehema de valdiação do formulario
 });
 
 export type orderData = zod.infer<typeof confirmOrderFormValidationSchema>;  //zod infer infere o tipo de schema
