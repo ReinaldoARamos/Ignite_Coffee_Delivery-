@@ -8,6 +8,12 @@ import { TypeOf } from "zod/lib";
 
 const confirmOrderFormValidationSchema = zod.object({
   cep: zod.string().min(8, "Digite o CEP").max(8, "Digite o CEP"),  //objeto do zod onde fica o sccehema de valdiação do formulario
+  street: zod.string().min(1, "Digite o Nome da rua"),
+  number: zod.string().min(1, "Digite o número"),
+  complement: zod.string(),
+  bairro: zod.string().min(1, "Digite o bairro"),
+  city: zod.string().min(1, "Digite a cidade"),
+  uf: zod.string().min(1, "Digite a uf"),
 });
 
 export type orderData = zod.infer<typeof confirmOrderFormValidationSchema>;  //zod infer infere o tipo de schema
