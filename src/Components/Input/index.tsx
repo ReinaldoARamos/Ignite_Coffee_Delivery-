@@ -13,7 +13,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 
 export const InputText = forwardRef<HTMLInputElement, InputProps>(
    ({ error ,...props}, ref) => { //desestururando as props do imput para passar o erro
-      return   <InputWrapper>
+      return   <InputWrapper className={props.className}>
       <InputStyleContainer  {...props} ref={ref}/>
       {error && (
          <RegularText size="s">{error}</RegularText> //criando o erro e um if que se tiver ele digita um regular
