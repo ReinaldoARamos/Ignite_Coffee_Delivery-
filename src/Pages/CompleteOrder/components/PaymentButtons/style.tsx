@@ -1,17 +1,27 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const PaymentButtonStyle = styled.button`
 
  input{
   
-margin-right: 20rem ;
+
 visibility: hidden ;
   appearance: none;
-  border: none ;
+
   display: none ;
 
  }
  
+ input:checked + label div{
+${(theme) => css`
+background: ${({ theme }) => theme.colors["brand-purple"]}; 
+border: 1px solid ${({ theme }) => theme.colors["brand-purple"]};
+`}
+ }
+ &:hover {
+    background: 1px solid ${({ theme }) => theme.colors["brand-purple-light"]};
+
+  }
 `;
 
 export const ContentContainer  = styled.div`
