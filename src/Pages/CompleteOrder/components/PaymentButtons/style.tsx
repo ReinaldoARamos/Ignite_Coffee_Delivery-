@@ -1,7 +1,19 @@
 import styled from "styled-components";
 
 export const PaymentButtonStyle = styled.button`
-  border: 1px solid ${({ theme }) => theme.colors["brand-purple-dark"]};
+ input{
+  
+
+visibility: hidden ;
+  appearance: none;
+  border: none ;
+ }
+ 
+`;
+
+export const ContentContainer  = styled.div`
+ 
+  border: none;
   width: 14rem;
   height: 3.188rem;
   display: flex;
@@ -18,6 +30,6 @@ export const PaymentButtonStyle = styled.button`
     border: 1px solid ${({ theme }) => theme.colors["brand-purple"]};
     background: ${({theme}) => theme.colors["base-white"]} ;
   }
+user-select: none ;
 
- 
-`;
+`
