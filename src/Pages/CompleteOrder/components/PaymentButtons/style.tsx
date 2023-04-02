@@ -4,12 +4,12 @@ export const PaymentButtonStyle = styled.button`
 
  input{
   
-margin-right: 200rem ;
+margin-right: 20rem ;
 visibility: hidden ;
   appearance: none;
   border: none ;
   display: none ;
-  overflow: hidden ;
+
  }
  
 `;
@@ -31,7 +31,7 @@ export const ContentContainer  = styled.div`
 
   &:hover {
     border: 1px solid ${({ theme }) => theme.colors["brand-purple"]};
-    background: ${({theme}) => theme.colors["base-white"]} ;
+
   }
 user-select: none ;
 
