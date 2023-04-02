@@ -32,7 +32,7 @@ export function PaymentForm() {
 
   return (
     <PaymentButtonContainer>
-      {Object.entries(PaymentMethod).map(([key, {id, label, icon}]) => ( 
+      {Object.entries(PaymentMethod).map(([key, {label, icon}]) => ( 
         <PaymentButton
           label={label}
           icon={icon}

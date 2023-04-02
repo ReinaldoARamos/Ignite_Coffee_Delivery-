@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const PaymentButtonStyle = styled.button`
+
  input{
   
-
+margin-right: 200rem ;
 visibility: hidden ;
   appearance: none;
   border: none ;
+  display: none ;
+  overflow: hidden ;
  }
  
 `;

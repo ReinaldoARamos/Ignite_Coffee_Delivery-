@@ -5,7 +5,7 @@ import { ContentContainer, PaymentButtonStyle } from "./style";
 type PaymentMethodsProps = InputHTMLAttributes<HTMLInputElement> & {
   icon: ReactNode;
   label: string;
-  id: number;
+
 };
 
 export function PaymentButton({
@@ -16,13 +16,14 @@ export function PaymentButton({
 }: PaymentMethodsProps) {
   return (
     <PaymentButtonStyle>
-       <input id={id} type="radio" {...props} name="PaymentMethod" />
-      <label>
+         <input id={id} {...props} name="PaymentMethod" />
+          <label>
+      <ContentContainer>
      
-        <ContentContainer>
-                {icon}
-                {label}
-        </ContentContainer>
+  
+        {icon}
+        {label}
+      </ContentContainer>
       </label>
     </PaymentButtonStyle>
   );
