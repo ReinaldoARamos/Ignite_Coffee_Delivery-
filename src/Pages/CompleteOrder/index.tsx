@@ -5,6 +5,7 @@ import * as zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, FormProvider } from "react-hook-form";
 import { TypeOf } from "zod/lib";
+import { useNavigate } from "react-router-dom";
 
 
 enum paymentMethod {
@@ -36,10 +37,14 @@ export function CartPage() {
     resolver: zodResolver(confirmOrderFormValidationSchema),
   });
 
+  const navigate = useNavigate();
+
   const { handleSubmit } = confirmOrderForm; //confirmOderForm que é um useForm com a tipagem com o schema
   //passando o resolver da biblioteca zod pegando esse scehema
   function handleConfirmOrder(data: confirmOrderData) {
-    console.log(data);
+      navigate('/Delivery', {
+        state: data
+      })
   }
 
   return (
