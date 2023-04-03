@@ -48,5 +48,10 @@ margin-top: 3rem;
 display: flex;
 gap: 2rem;
 
+>p{
+
+  color: ${({theme}) => theme.colors["base-error"]};
+
+}
 
 `

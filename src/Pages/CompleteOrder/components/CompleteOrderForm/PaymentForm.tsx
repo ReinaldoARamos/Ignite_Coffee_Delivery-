@@ -3,6 +3,7 @@ import { useTheme } from "styled-components";
 import { PaymentMethodInput } from "../../components/PaymentButtons/index";
 import { PaymentButtonContainer, PaymentFormContainer } from "./style";
 import { useForm, useFormContext } from "react-hook-form";
+import { RegularText } from "../../../../Components/Header/Typography";
 
 
 export const PaymentMethod = {
@@ -21,8 +22,8 @@ export const PaymentMethod = {
   },
 };
 export function PaymentForm() {
-  const {register} = useFormContext();
-
+  const {register, formState: {errors}} = useFormContext();
+  const paymentMethodError = errors?.PaymentMethod?.message as unknown as string;
 
   return (
 
@@ -38,6 +39,9 @@ export function PaymentForm() {
           
         />
       ))}
+     <p>
+     {paymentMethodError && <RegularText>{paymentMethodError}</RegularText>}
+     </p>
     </PaymentButtonContainer>
 
   );
