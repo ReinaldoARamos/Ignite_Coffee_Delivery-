@@ -13,15 +13,19 @@ visibility: hidden ;
  }
  
  input:checked + label div{
+  
 ${(theme) => css`
-background: ${({ theme }) => theme.colors["brand-purple"]}; 
+background: ${({ theme }) => theme.colors["brand-purple-light"]}; 
 border: 1px solid ${({ theme }) => theme.colors["brand-purple"]};
-`}
- }
- &:hover {
+
+&:hover {
     background: 1px solid ${({ theme }) => theme.colors["brand-purple-light"]};
 
   }
+`}
+ }
+ 
+ 
 `;
 
 export const ContentContainer  = styled.div`
