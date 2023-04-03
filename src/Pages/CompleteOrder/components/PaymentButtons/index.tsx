@@ -15,9 +15,11 @@ export function PaymentButton({
 }: PaymentMethodsProps) {
   return (
     <PaymentButtonStyle>
-         <input  id={id} type="radio" name="PaymentMethod"/>
+        
           <label>
+          <input  id={id} type="radio" name="PaymentMethod"/>
       <ContentContainer>
+
         {icon}
         {label}
       </ContentContainer>

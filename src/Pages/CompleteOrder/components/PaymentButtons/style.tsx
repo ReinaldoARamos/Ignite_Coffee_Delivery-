@@ -2,9 +2,11 @@ import styled, { css } from "styled-components";
 
 export const PaymentButtonStyle = styled.div`
 input {
+
+  visibility: hidden;
   
 }
-input:checked + label div {
+input:checked +  div {
   ${({ theme }) => css`
     background: ${theme.colors["brand-purple-light"]};
     border-color: ${theme.colors["brand-purple"]};
