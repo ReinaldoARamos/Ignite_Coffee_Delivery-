@@ -6,6 +6,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, FormProvider } from "react-hook-form";
 import { TypeOf } from "zod/lib";
 
+
+enum paymentMethod {
+  credit = "credit",
+  debit = "debit",
+  money = "money",
+}
 const confirmOrderFormValidationSchema = zod.object({
   cep: zod.string().min(8, "Digite o CEP").max(8, "Digite o CEP"),  //objeto do zod onde fica o sccehema de valdiação do formulario
   street: zod.string().min(1, "Digite o Nome da rua"),
@@ -14,6 +20,11 @@ const confirmOrderFormValidationSchema = zod.object({
   bairro: zod.string().min(1, "Digite o bairro"),
   city: zod.string().min(1, "Digite a cidade"),
   uf: zod.string().min(1, "Digite a uf"),
+  paymentMethod: zod.nativeEnum(paymentMethod, {
+    errorMap:() => {
+      return {message: "Informe o método de pagamento"}
+    }
+  })
 });
 
 export type orderData = zod.infer<typeof confirmOrderFormValidationSchema>;  //zod infer infere o tipo de schema

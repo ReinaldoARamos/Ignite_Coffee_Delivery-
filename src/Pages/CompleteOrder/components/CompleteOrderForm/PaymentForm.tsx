@@ -1,7 +1,8 @@
 import { Money, CreditCard, Bank, CurrencyCircleDollar } from "phosphor-react";
 import { useTheme } from "styled-components";
-import { PaymentButton } from "../../components/PaymentButtons/index";
+import { PaymentMethodInput } from "../../components/PaymentButtons/index";
 import { PaymentButtonContainer, PaymentFormContainer } from "./style";
+import { useForm, useFormContext } from "react-hook-form";
 
 
 export const PaymentMethod = {
@@ -20,18 +21,20 @@ export const PaymentMethod = {
   },
 };
 export function PaymentForm() {
+  const {register} = useFormContext();
 
 
   return (
 
     <PaymentButtonContainer >
       {Object.entries(PaymentMethod).map(([key, {label, icon}]) => ( 
-        <PaymentButton
+        <PaymentMethodInput
       
           label={label}
           icon={icon}
           id={key}
           value={key}
+          {...register("paymentMethod")}
           
         />
       ))}
