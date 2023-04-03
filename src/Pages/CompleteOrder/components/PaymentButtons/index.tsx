@@ -1,4 +1,3 @@
-import { CreditCard } from "phosphor-react";
 import { InputHTMLAttributes, ReactNode } from "react";
 import { ContentContainer, PaymentButtonStyle } from "./style";
 
@@ -16,11 +15,9 @@ export function PaymentButton({
 }: PaymentMethodsProps) {
   return (
     <PaymentButtonStyle>
-         <input id={id} {...props} name="PaymentMethod" />
+         <input  id={id} type="radio" name="PaymentMethod"/>
           <label>
       <ContentContainer>
-     
-  
         {icon}
         {label}
       </ContentContainer>
