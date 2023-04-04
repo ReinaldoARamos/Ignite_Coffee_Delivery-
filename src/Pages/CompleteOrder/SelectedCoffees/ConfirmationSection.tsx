@@ -10,7 +10,7 @@ export function ConfirmationSection() {
      const {cartItems, cartItemsTotal, deliveryTotal} = UseCart(); 
      const formatedPrice = FormatNumber(cartItemsTotal);
      const formatedTotal = FormatNumber(deliveryTotal)
-        if(cartItems.length >= 1){
+ 
             return(
                 <ConfirmationSectionContainer>
                 <div>
@@ -35,7 +35,7 @@ export function ConfirmationSection() {
          
          
             
-        } 
+        
  
     
 }
